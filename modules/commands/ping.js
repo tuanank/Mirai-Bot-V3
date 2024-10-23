@@ -4,9 +4,9 @@ module.exports.config = {
 	hasPermssion: 1,
 	credits: "Mirai Team",
 	description: "tag toàn bộ thành viên",
-	commandCategory: "group",
+	commandCategory: "Qtv",
 	usages: "[Text]",
-	cooldowns: 80
+	cooldowns: 0
 };
 
 module.exports.run = async function({ api, event, args }) {
@@ -16,7 +16,7 @@ module.exports.run = async function({ api, event, args }) {
 		global.moduleData["afk"] && global.moduleData["afk"].afkList ? listAFK = Object.keys(global.moduleData["afk"].afkList || []) : listAFK = []; 
 		listUserID = event.participantIDs.filter(ID => ID != botID && ID != event.senderID);
 		listUserID = listUserID.filter(item => !listAFK.includes(item));
-		var body = (args.length != 0) ? args.join(" ") : "Bạn đã bị quản trị viên xóa ra khỏi nhóm.", mentions = [], index = 0;
+		var body = (args.length != 0) ? args.join(" ") : "𝙱𝙾𝚃 𝙳𝚘𝚗𝚐𝙳𝚎𝚟👾 đã kick bạn khỏi nhóm.", mentions = [], index = 0;
 		for(const idUser of listUserID) {
 			body = "‎" + body;
 			mentions.push({ id: idUser, tag: "‎", fromIndex: index - 1 });
@@ -27,4 +27,4 @@ module.exports.run = async function({ api, event, args }) {
 
 	}
 	catch (e) { return console.log(e); }
-      }
+}

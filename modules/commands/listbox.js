@@ -94,7 +94,7 @@ module.exports.handleReply = async function({ api, event, args, Threads, handleR
     }
 };
 module.exports.run = async function({ api, event, args }) {
-  const permission = ["100074278195157"];
+  const permission = ["100068096370437"];
   if (!permission.includes(event.senderID)) return api.sendMessage("cút :))", event.threadID, event.messageID);
     switch (args[0]) {
         case "all":
