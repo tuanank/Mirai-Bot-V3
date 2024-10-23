@@ -27,7 +27,7 @@ module.exports.run = async function ({ api, event, args }) {
     const { threadID: tid, messageID: mid, senderID: sid } = event;
     const cmds = global.client.commands;
 
-    const url = 'https://files.catbox.moe/amblv9.gif';
+    const url = 'https://i.imgur.com/g2ZiKu6.mp4';
     const img = (await axios.get(url, { responseType: "stream" })).data;
     const time = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss || DD/MM/YYYY");
 
@@ -67,7 +67,7 @@ module.exports.handleReply = async function ({ handleReply: $, api, event }) {
     const { sendMessage: send, unsendMessage: un } = api;
     const { threadID: tid, messageID: mid, senderID: sid, args } = event;
     const axios = require("axios");
-    const url = 'https://files.catbox.moe/amblv9.gif';
+    const url = 'https://i.imgur.com/g2ZiKu6.mp4';
     const img = (await axios.get(url, { responseType: "stream" })).data;
 
     if (sid != $.author) {
