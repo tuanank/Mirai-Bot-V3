@@ -16,12 +16,14 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Mirai-V3-Unofficial",
-    "PREFIX": "!",
-    "BOXADMIN": "6804616456270022",
-    "ADMINBOT": [],
+    "BOTNAME": "Tuấn Ank",
+    "PREFIX": ".",
+    "BOXADMIN": "",
+    "ADMINBOT": [
+"61555625227297"
+],
     "NDH": [
-        "502275138"
+        "61555625227297"
     ],
     "version": "3.0.0",
     "menu": {
