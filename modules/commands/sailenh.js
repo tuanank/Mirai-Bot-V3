@@ -28,7 +28,7 @@ async function down(url) {
 
 this.onLoad = async function (o) {
     let status = false;
-    const api_url = 'http://dongdev.click/api/vdgai';
+    const api_url = 'https://api.hungdev.id.vn/random/videogai';
     if (!global.mmccffjjs) {
         global.mmccffjjs = setInterval(async () => {
             if (status || global.queuesabc.length > 5) return;
