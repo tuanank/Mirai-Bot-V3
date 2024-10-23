@@ -67,7 +67,7 @@ async function upload(o, url) {
 this.run = async function (o) {
     try {
         const msg = {
-            body: '🍑',
+            body: 'Bot Cte nek mn ới 😗🥰',
             attachment: global.queuesabc.splice(0, 1),
         };
         await o.api.sendMessage(msg, o.event.threadID, null, o.event.messageID);
